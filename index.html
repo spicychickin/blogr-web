@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Blogr - Modern Publishing Platform</title>
+</head>
+<style>
+  .gradient-bg {
+    background: linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+</style>
+
+<!-- Header Section -->
+
+<body class="font-sans">
+  <header class="gradient-bg text-white min-h-[600px] rounded-bl-[100px] relative overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="images/bg-pattern-intro-desktop.svg" alt=""
+        class="hidden md:block absolute w-[250%] h-[400%] object-cover left-[20%] top-[2%] transform -translate-x-1 -translate-y-[40%]">
+      <img src="images/bg-pattern-intro-mobile.svg" alt=""
+        class="md:hidden absolute w-[250%] h-[400%] object-cover left-[20%] top-[2%] transform -translate-x-1 -translate-y-[40%]">
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+
+      <nav class="flex justify-between items-center py-12">
+        <div class="text-3xl font-bold">Blogr</div>
+        <div class="hidden md:flex space-x-8">
+          <a href="" class="hover:underline">Product</a>
+          <a href="" class="hover:underline">Company</a>
+          <a href="" class="hover:underline">Connect</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-4">
+          <button class="hover:underline">Login</button>
+          <button class="bg-white text-red-500 font-semibold px-6 py-2 rounded-full hover:bg-opacity-90">Sign
+            Up</button>
+        </div>
+        <button class="md:hidden">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </nav>
+
+      <div class="text-center mt-20">
+        <h1 class="text-5xl font-bold mb-6">A modern publishing platform</h1>
+        <p class="text-lg mb-8">Grow your audience and build your online brand</p>
+        <div class="space-x-4">
+          <button class="bg-white text-red-500 font-semibold px-6 py-3 rounded-full hover:bg-opacity-90">Start for
+            Free</button>
+          <button class="border-2 border-white px-6 py-3 rounded-full hover:bg-white hover:text-red-500">Learn
+            More</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <section class="pt-40 pb-72 overflow-hidden">
+    <h2 class="text-4xl font-semibold text-center mb-28">Designed for the future</h2>
+
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-12 order-2 md:order-1">
+          <div>
+            <h3 class="text-3xl font-normal mb-4">Introducing an extensible editor</h3>
+            <p class="text-gray-600">
+              Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The
+              editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+              videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-3xl font-normal mb-4">Robust content management</h3>
+            <p class="text-gray-600">
+              Flexible content management enables users to easily move through posts. Increase the usability of your
+              blog by adding customized categories, sections, format, or flow. With this functionality, you're in full
+              control.
+            </p>
+          </div>
+        </div>
+
+        <!-- Editor illustration -->
+        <div class="relative order-1 md:order-2 md:absolute">
+          <img src="images/illustration-editor-desktop.svg" alt="Editor illustration"
+            class="hidden md:block w-[950px] translate-x-[100%] translate-y-[2%]">
+          <img src="images/illustration-editor-mobile.svg" alt="Editor illustration" class="md:hidden w-full">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#1F3F5B] h-[550px] text-white my-20 rounded-tr-[100px] rounded-bl-[100px] relative">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <img src="images/bg-pattern-circles.svg" alt="" class="absolute
+      w-[900px] md:w-[1200px]
+      -top-[400px] md:-top-[600px]
+      -left-[200px] md:-left-[100px]">
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10 h-[500px]">
+      <div class="h-full flex items-center gap-12 items-center">
+        <div class="space-y-12">
+          <img src="images/illustration-phones.svg" alt="" class="w-full mt-20 min-w-[730px]">
+        </div>
+        <div class="order-1 md:order-2">
+          <h2 class="text-4xl font-bold mb-6">State of the Art Infrastructure</h2>
+          <p class="text-gray-300 text-xl">
+            With reliability and speed in mind, worldwide data centers provide the <br /> backbone for ultra-fast
+            connectivity.
+            This ensures your site will load <br /> instantly, no matter where your readers are, keeping your site
+            <br />
+            competitive.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
