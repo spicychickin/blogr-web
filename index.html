@@ -29,9 +29,9 @@
   <header class="gradient-bg text-white min-h-[600px] rounded-bl-[100px] relative overflow-hidden">
     <div class="absolute inset-0 z-0">
       <img src="images/bg-pattern-intro-desktop.svg" alt=""
-        class="hidden md:block absolute w-[250%] h-[400%] object-cover left-[20%] top-[2%] transform -translate-x-1 -translate-y-[40%]">
+        class="hidden md:block absolute w-[250%] h-[400%] object-cover top-[2%] transform -translate-x-1 -translate-y-[40%]">
       <img src="images/bg-pattern-intro-mobile.svg" alt=""
-        class="md:hidden absolute w-[250%] h-[400%] object-cover left-[20%] top-[2%] transform -translate-x-1 -translate-y-[40%]">
+        class="md:hidden absolute w-[250%] h-[400%] object-cover top-[2%] transform -translate-x-1 -translate-y-[40%]">
     </div>
 
     <div class="container mx-auto px-6 relative z-10">
@@ -55,7 +55,7 @@
         </button>
       </nav>
 
-      <div class="text-center mt-20">
+      <div class="text-center mt-20 items-center">
         <h1 class="text-5xl font-bold mb-6">A modern publishing platform</h1>
         <p class="text-lg mb-8">Grow your audience and build your online brand</p>
         <div class="space-x-4">
@@ -70,7 +70,7 @@
 
   <!-- Main Content Section -->
   <section class="pt-40 pb-72 overflow-hidden">
-    <h2 class="text-4xl font-semibold text-center mb-28">Designed for the future</h2>
+    <h2 class="text-4xl font-semibold text-center mb-28 items-center">Designed for the future</h2>
 
     <div class="container mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -97,7 +97,7 @@
         <!-- Editor illustration -->
         <div class="relative order-1 md:order-2 md:absolute">
           <img src="images/illustration-editor-desktop.svg" alt="Editor illustration"
-            class="hidden md:block w-[950px] translate-x-[100%] translate-y-[2%]">
+            class="hidden md:block min-w-[730px] translate-x-[115%] translate-y-[2%]">
           <img src="images/illustration-editor-mobile.svg" alt="Editor illustration" class="md:hidden w-full">
         </div>
       </div>
@@ -126,6 +126,38 @@
             <br />
             competitive.
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 overflow-hidden">
+    <div class="container mx-auto px-6">
+      <div class="h-full flex items-center">
+        <div class="relative">
+          <img src="images/illustration-laptop-desktop.svg" alt="Laptop Illustration"
+          class="hidden md:block min-w-[1100px] translate-x-[-53%]">
+          <img src="images/illustration-laptop-mobile.svg" alt="Laptop Illustration" class="md:hidden w-full">
+        </div>
+        <div class="space-y-12 order-1 md:order-2">
+          <div>
+            <h3 class="text-2xl font-bold mb-4">Free, open, simple</h3>
+            <p class="text-gray-600">
+              Blogr is a free and open source application backed by a large community of helpful developers. It supports
+              features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting
+              tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </div>
+          <div class="space-y-12 order-1 md:order-2">
+            <div>
+              <h3 class="text-2xl font-bold mb-4">Powerful tooling</h3>
+              <p class="text-gray-600">
+                Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment
+                a breeze, but capable of producing even the most complicated sites.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
