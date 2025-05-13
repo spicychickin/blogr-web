@@ -30,11 +30,11 @@
     <div class="absolute inset-0 z-0">
       <img src="images/bg-pattern-intro-desktop.svg" alt=""
         class="hidden md:block absolute w-[250%] h-[400%] object-cover top-[2%] transform -translate-x-1 -translate-y-[40%]">
-      <img src="images/bg-pattern-intro-mobile.svg" alt=""
+      <img src="images/bg-pattern-intro-mobile.svg" alt="" f
         class="md:hidden absolute w-[250%] h-[400%] object-cover top-[2%] transform -translate-x-1 -translate-y-[40%]">
     </div>
 
-    <div class="container mx-auto px-6 relative z-10">
+    <div class="max-w-[1280px] mx-auto relative z-10">
 
       <nav class="flex justify-between items-center py-12">
         <div class="text-3xl font-bold">Blogr</div>
@@ -59,7 +59,7 @@
         <h1 class="text-5xl font-bold mb-6">A modern publishing platform</h1>
         <p class="text-lg mb-8">Grow your audience and build your online brand</p>
         <div class="space-x-4">
-          <button class="bg-white text-red-500 font-semibold px-6 py-3 rounded-full hover:bg-opacity-90">Start for
+          <button class="bg-white text-red-500 px-6 font-semibold py-3 rounded-full hover:bg-opacity-90">Start for
             Free</button>
           <button class="border-2 border-white px-6 py-3 rounded-full hover:bg-white hover:text-red-500">Learn
             More</button>
@@ -69,13 +69,12 @@
   </header>
 
   <!-- Main Content Section -->
-  <section class="pt-40 pb-72 overflow-hidden">
-    <h2 class="text-4xl font-semibold text-center mb-28 items-center">Designed for the future</h2>
-
-    <div class="container mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="space-y-12 order-2 md:order-1">
-          <div>
+  <section class="w-full pt-20 overflow-hidden">
+    <h2 class="text-4xl font-semibold text-center items-center">Designed for the future</h2>
+    <div class="w-full max-w-[1280px] mx-auto">
+      <div class="w-full h-full flex items-center">
+        <div class="w-1/2 space-y-12">
+          <div class="w-full">
             <h3 class="text-3xl font-normal mb-4">Introducing an extensible editor</h3>
             <p class="text-gray-600">
               Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The
@@ -84,7 +83,7 @@
               change the looks of a blog.
             </p>
           </div>
-          <div>
+          <div class="w-full">
             <h3 class="text-3xl font-normal mb-4">Robust content management</h3>
             <p class="text-gray-600">
               Flexible content management enables users to easily move through posts. Increase the usability of your
@@ -95,30 +94,30 @@
         </div>
 
         <!-- Editor illustration -->
-        <div class="relative order-1 md:order-2 md:absolute">
+        <div class="w-1/2">
           <img src="images/illustration-editor-desktop.svg" alt="Editor illustration"
-            class="hidden md:block min-w-[730px] translate-x-[115%] translate-y-[2%]">
+            class="hidden md:block min-w-[850px] transform translate-x-[15%] -translate-y-[5%]">
           <img src="images/illustration-editor-mobile.svg" alt="Editor illustration" class="md:hidden w-full">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="bg-[#1F3F5B] h-[550px] text-white my-20 rounded-tr-[100px] rounded-bl-[100px] relative">
+  <section class="bg-[#1F3F5B] h-[450px] text-white my-20 rounded-tr-[100px] rounded-bl-[100px] relative">
     <div class="absolute inset-0 z-0 overflow-hidden">
       <img src="images/bg-pattern-circles.svg" alt="" class="absolute
-      w-[900px] md:w-[1200px]
+      w-[900px] md:w-[900px]
       -top-[400px] md:-top-[600px]
       -left-[200px] md:-left-[100px]">
     </div>
 
-    <div class="container mx-auto px-6 relative z-10 h-[500px]">
+    <div class="max-w-[1280px] mx-auto relative z-10 h-[400px]">
       <div class="h-full flex items-center gap-12 items-center">
         <div class="space-y-12">
-          <img src="images/illustration-phones.svg" alt="" class="w-full mt-20 min-w-[730px]">
+          <img src="images/illustration-phones.svg" alt="" class="w-full mt-20 min-w-[500px]">
         </div>
         <div class="order-1 md:order-2">
-          <h2 class="text-4xl font-bold mb-6">State of the Art Infrastructure</h2>
+          <h2 class="text-3xl font-bold mb-6">State of the Art Infrastructure</h2>
           <p class="text-gray-300 text-xl">
             With reliability and speed in mind, worldwide data centers provide the <br /> backbone for ultra-fast
             connectivity.
@@ -132,14 +131,12 @@
   </section>
 
   <section class="py-20 overflow-hidden">
-    <div class="container mx-auto px-6">
-      <div class="h-full flex items-center">
-        <div class="relative">
+    <div class="w-full mx-auto">
+      <div class="flex justtify-between items-center">
           <img src="images/illustration-laptop-desktop.svg" alt="Laptop Illustration"
-          class="hidden md:block min-w-[1100px] translate-x-[-53%]">
+            class="hidden md:block min-w-[1100px] translate-x-[-33%]">
           <img src="images/illustration-laptop-mobile.svg" alt="Laptop Illustration" class="md:hidden w-full">
-        </div>
-        <div class="space-y-12 order-1 md:order-2">
+        <div class="space-y-12">
           <div>
             <h3 class="text-2xl font-bold mb-4">Free, open, simple</h3>
             <p class="text-gray-600">
@@ -149,11 +146,12 @@
               learn.
             </p>
           </div>
-          <div class="space-y-12 order-1 md:order-2">
+          <div class="space-y-12">
             <div>
               <h3 class="text-2xl font-bold mb-4">Powerful tooling</h3>
               <p class="text-gray-600">
-                Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment
+                Batteries included. We built a simple and straightforward CLI tool that makes customization and
+                deployment
                 a breeze, but capable of producing even the most complicated sites.
               </p>
             </div>
