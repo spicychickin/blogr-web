@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Blogr - Modern Publishing Platform</title>
 </head>
@@ -21,11 +26,15 @@
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+
+  body {
+    font-family: 'Overpass', sans-serif;
+  }
 </style>
 
 <!-- Header Section -->
 
-<body class="font-sans">
+<body>
   <header class="gradient-bg text-white min-h-[600px] rounded-bl-[100px] relative overflow-hidden">
     <div class="absolute inset-0 z-0">
       <img src="images/bg-pattern-intro-desktop.svg" alt=""
@@ -36,7 +45,7 @@
 
     <div class="max-w-[1280px] mx-auto relative z-10">
 
-      <nav class="flex justify-between items-center py-12">
+      <nav class="flex justify-between items-center py-12 sm:px-0 px-4">
         <div class="text-3xl font-bold">Blogr</div>
         <div class="hidden md:flex space-x-8">
           <a href="" class="hover:underline">Product</a>
@@ -69,14 +78,16 @@
   </header>
 
   <!-- Main Content Section -->
-  <section class="w-full pt-20 overflow-hidden">
-    <h2 class="text-4xl font-semibold text-center items-center">Designed for the future</h2>
+  <section class="w-full pt-20 mb-40 sm:px-0 px-4 overflow-hidden">
+    <h2 class="text-2xl text-[#1F3E5A] font-semibold text-center items-center mb-6">Designed for the future</h2>
     <div class="w-full max-w-[1280px] mx-auto">
-      <div class="w-full h-full flex items-center">
-        <div class="w-1/2 space-y-12">
+      <div class="w-full h-full flex sm:flex-row flex-col items-center gap-12">
+        <div class="sm:w-1/2 space-y-12 sm:order-1 order-2 px-6 sm:px-auto">
           <div class="w-full">
-            <h3 class="text-3xl font-normal mb-4">Introducing an extensible editor</h3>
-            <p class="text-gray-600">
+            <h3 class="sm:text-3xl text-2xl text-[#1F3E5A] font-normal mb-4 sm:text-left text-center">Introducing an
+              extensible
+              editor</h3>
+            <p class="text-[#4C5862] text-center sm:text-left">
               Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The
               editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
               videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
@@ -84,8 +95,9 @@
             </p>
           </div>
           <div class="w-full">
-            <h3 class="text-3xl font-normal mb-4">Robust content management</h3>
-            <p class="text-gray-600">
+            <h3 class="sm:text-3xl text-2xl text-[#1F3E5A] font-normal mb-4 sm:text-left text-center">Robust content
+              management</h3>
+            <p class="text-[#4C5862] text-center sm:text-left">
               Flexible content management enables users to easily move through posts. Increase the usability of your
               blog by adding customized categories, sections, format, or flow. With this functionality, you're in full
               control.
@@ -94,29 +106,30 @@
         </div>
 
         <!-- Editor illustration -->
-        <div class="w-1/2">
+        <div class="sm:w-1/2 sm:order-2 order-1">
           <img src="images/illustration-editor-desktop.svg" alt="Editor illustration"
-            class="hidden md:block min-w-[850px] transform translate-x-[15%] -translate-y-[5%]">
+            class="hidden md:block min-w-[900px] transform 2xl:translate-x-[35%] -translate-y-[5%]">
           <img src="images/illustration-editor-mobile.svg" alt="Editor illustration" class="md:hidden w-full">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="bg-[#1F3F5B] h-[450px] text-white my-20 rounded-tr-[100px] rounded-bl-[100px] relative">
+  <section class="bg-[#1F3F5B] h-[625px] sm:h-[450px] text-white my-20 rounded-tr-[100px] rounded-bl-[100px] relative">
     <div class="absolute inset-0 z-0 overflow-hidden">
       <img src="images/bg-pattern-circles.svg" alt="" class="absolute
-      w-[900px] md:w-[900px]
+      w-[900px] md:w-[1020px]
       -top-[400px] md:-top-[600px]
       -left-[200px] md:-left-[100px]">
     </div>
 
     <div class="max-w-[1280px] mx-auto relative z-10 h-[400px]">
-      <div class="h-full flex items-center gap-12 items-center">
+      <div class="h-full flex sm:flex-row flex-col items-center gap-12 items-center">
         <div class="space-y-12">
-          <img src="images/illustration-phones.svg" alt="" class="w-full mt-20 min-w-[500px]">
+          <img src="images/illustration-phones.svg" alt=""
+            class="ml-2 min-w-[330px] sm:min-w-[500px]">
         </div>
-        <div class="order-1 md:order-2">
+        <div class="text-left order-1 sm:order-2">
           <h2 class="text-3xl font-bold mb-6">State of the Art Infrastructure</h2>
           <p class="text-gray-300 text-xl">
             With reliability and speed in mind, worldwide data centers provide the <br /> backbone for ultra-fast
@@ -130,26 +143,25 @@
     </div>
   </section>
 
-  <section class="py-20 overflow-hidden">
-    <div class="w-full mx-auto">
-      <div class="flex justtify-between items-center">
-          <img src="images/illustration-laptop-desktop.svg" alt="Laptop Illustration"
-            class="hidden md:block min-w-[1100px] translate-x-[-33%]">
-          <img src="images/illustration-laptop-mobile.svg" alt="Laptop Illustration" class="md:hidden w-full">
-        <div class="space-y-12">
+  <!-- <section class="w-full h-full py-20 overflow-hidden">
+    <div class="mx-auto">
+      <div class="flex items-center">
+        <img src="images/illustration-laptop-desktop.svg" alt="Laptop Illustration" class="hidden md:flex ml-[-250px]">
+        <img src="images/illustration-laptop-mobile.svg" alt="Laptop Illustration" class="md:hidden w-full">
+        <div class=" space-y-12 pr-32">
           <div>
-            <h3 class="text-2xl font-bold mb-4">Free, open, simple</h3>
-            <p class="text-gray-600">
+            <h3 class="text-2xl text-[#1F3E5A] font-bold mb-4">Free, open, simple</h3>
+            <p class="text-[#4C5862]">
               Blogr is a free and open source application backed by a large community of helpful developers. It supports
               features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting
               tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to
               learn.
             </p>
           </div>
-          <div class="space-y-12">
+          <div>
             <div>
-              <h3 class="text-2xl font-bold mb-4">Powerful tooling</h3>
-              <p class="text-gray-600">
+              <h3 class="text-2xl text-[#1F3E5A] font-bold mb-4">Powerful tooling</h3>
+              <p class="text-[#4C5862]">
                 Batteries included. We built a simple and straightforward CLI tool that makes customization and
                 deployment
                 a breeze, but capable of producing even the most complicated sites.
@@ -159,7 +171,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </body>
 
 </html>
