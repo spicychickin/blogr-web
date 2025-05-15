@@ -10,6 +10,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Blogr - Modern Publishing Platform</title>
 </head>
@@ -30,6 +33,25 @@
   body {
     font-family: 'Overpass', sans-serif;
   }
+
+  .ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+  .ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 </style>
 
 <!-- Header Section -->
@@ -46,7 +68,23 @@
     <div class="max-w-[1280px] mx-auto relative z-10">
 
       <nav class="flex justify-between items-center py-12 sm:px-0 px-4">
-        <div class="text-3xl font-bold">Blogr</div>
+        <div class="text-3xl font-semibold">Blogr</div>
+        <div id="mobileMenu" class="sm:hidden fixed top-0 right-0 w-[80%] max-w-[400px] h-screen bg-white transform translate-x-full transition-transform duration-300 ease-in-out rounded-l-lg shadow-xl">
+          <div class="p-8">
+            <button>
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+                <path d="M2 2L24 24M24 2L2 24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div>
+              <a href="">Overview</a>
+              <a href="">Pricing</a>
+              <a href="">Marketplace</a>
+              <a href="">Features</a>
+              <a href="">Integrations</a>
+            </div>
+          </div>
+        </div>
         <div class="hidden md:flex space-x-8">
           <a href="" class="hover:underline">Product</a>
           <a href="" class="hover:underline">Company</a>
@@ -64,9 +102,9 @@
         </button>
       </nav>
 
-      <div class="text-center mt-20 items-center">
-        <h1 class="text-5xl font-bold mb-6">A modern publishing platform</h1>
-        <p class="text-lg mb-8">Grow your audience and build your online brand</p>
+      <div class="text-center px-6 mt-16 items-center">
+        <h1 class="text-[36px] font-normal mb-6">A modern publishing platform</h1>
+        <p class="text-[18px] font-thin mb-8">Grow your audience and build your online brand</p>
         <div class="space-x-4">
           <button class="bg-white text-red-500 px-6 font-semibold py-3 rounded-full hover:bg-opacity-90">Start for
             Free</button>
@@ -115,23 +153,21 @@
     </div>
   </section>
 
-  <section class="bg-[#1F3F5B] h-[625px] sm:h-[450px] text-white my-20 rounded-tr-[100px] rounded-bl-[100px] relative">
+  <section class="bg-gradient-to-br from-[#2D2E40] to-[#3F4164] h-[625px] sm:h-[450px] text-white my-20 rounded-tr-[100px] rounded-bl-[100px] relative">
     <div class="absolute inset-0 z-0 overflow-hidden">
       <img src="images/bg-pattern-circles.svg" alt="" class="absolute
-      w-[900px] md:w-[1020px]
-      -top-[400px] md:-top-[600px]
-      -left-[200px] md:-left-[100px]">
+      w-[600px] md:w-[1020px]
+      -top-[100px] md:-top-[600px]
+      -left-[10px] md:-left-[100px]">
     </div>
 
-    <div class="max-w-[1280px] mx-auto relative z-10 h-[400px]">
-      <div class="h-full flex sm:flex-row flex-col items-center gap-12 items-center">
-        <div class="space-y-12">
+    <div class="max-w-[1280px] mx-auto relative z-10">
+      <div class="flex sm:flex-row flex-col items-center">
           <img src="images/illustration-phones.svg" alt=""
-            class="ml-2 min-w-[330px] sm:min-w-[500px]">
-        </div>
-        <div class="text-left order-1 sm:order-2">
-          <h2 class="text-3xl font-bold mb-6">State of the Art Infrastructure</h2>
-          <p class="text-gray-300 text-xl">
+            class="ml-2 min-w-[330px] sm:min-w-[500px] transform translate-y-[-35%] sm:-translate-y-0">
+        <div class="text-left order-1 sm:order-2 px-8">
+          <h2 class="text-[40px] font-normal mb-6 -mt-32 sm:-mt-0 text-center sm:text-left">State of the Art Infrastructure</h2>
+          <p class="text-gray-300 text-[16px] text-center sm:text-left">
             With reliability and speed in mind, worldwide data centers provide the <br /> backbone for ultra-fast
             connectivity.
             This ensures your site will load <br /> instantly, no matter where your readers are, keeping your site
@@ -143,12 +179,12 @@
     </div>
   </section>
 
-  <!-- <section class="w-full h-full py-20 overflow-hidden">
+  <section class="w-full h-full sm:py-20 overflow-hidden">
     <div class="mx-auto">
-      <div class="flex items-center">
-        <img src="images/illustration-laptop-desktop.svg" alt="Laptop Illustration" class="hidden md:flex ml-[-250px]">
-        <img src="images/illustration-laptop-mobile.svg" alt="Laptop Illustration" class="md:hidden w-full">
-        <div class=" space-y-12 pr-32">
+      <div class="flex flex-col sm:flex-row items-center">
+        <img src="images/illustration-laptop-desktop.svg" alt="Laptop Illustration" class="hidden md:flex sm:ml-[-250px]">
+        <img src="images/illustration-laptop-mobile.svg" alt="Laptop Illustration" class="md:hidden w-full mb-5">
+        <div class=" space-y-12 px-8 sm:pr-32 text-center sm:text-left">
           <div>
             <h3 class="text-2xl text-[#1F3E5A] font-bold mb-4">Free, open, simple</h3>
             <p class="text-[#4C5862]">
@@ -171,7 +207,44 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
+
+  <footer class="bg-[#24242C] text-white rounded-tr-[100px] py-16 mt-12">
+    <div class="container mx-auto px-6">
+    <div class="grid sm:grid-cols-4 gap-8 text-center sm:text-left">
+      <div>
+        <div class="text-3xl ubuntu-bold">Blogr</div>
+      </div>
+      <div>
+        <h4 class="ubuntu-medium mb-6">Product</h4>
+        <ul class="space-y-2 ubuntu-light">
+          <li><a href="">Overview</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Marketplace</a></li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Integrations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="ubuntu-medium mb-6">Company</h4>
+        <ul class="space-y-2 ubuntu-light">
+          <li><a href="">About</a></li>
+          <li><a href="">Team</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="ubuntu-medium mb-6">Connect</h4>
+        <ul class="space-y-2 ubuntu-light">
+          <li><a href="">Contact</a></li>
+          <li><a href="">Newsletter</a></li>
+          <li><a href="">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </footer>
 </body>
 
 </html>
